@@ -8681,7 +8681,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a, p, span, strong, del, label {
-  font-family: var(--font-primary);
+  font-family: var(--font-sub);
 }
 
 .w_100 {
@@ -8737,7 +8737,7 @@ a, p, span, strong, del, label {
   font-style: normal;
   font-display: swap;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .container-fluid {
     padding: 0px 50px;
   }
@@ -8750,7 +8750,6 @@ a, p, span, strong, del, label {
 }
 .banner-top {
   padding-top: 50px;
-  margin-bottom: 30px;
 }
 .banner-top .box-banner-top {
   position: relative;
@@ -8836,10 +8835,10 @@ a, p, span, strong, del, label {
 }
 
 .line-row {
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 25px;
+  margin-top: 35px;
   width: 100%;
-  height: 5px;
+  height: 3px;
   background: #313132;
 }
 
@@ -8848,7 +8847,7 @@ a, p, span, strong, del, label {
   font-size: 20px;
   color: var(--color-white);
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .classify .blog-4 .box-blog, .classify .blog-3 .box-blog {
@@ -8856,7 +8855,7 @@ a, p, span, strong, del, label {
   margin-bottom: 10px;
 }
 .classify .blog-4 .box-blog img, .classify .blog-3 .box-blog img {
-  max-width: 100%;
+  width: 100%;
 }
 .classify .blog-4 .box-blog .text-blog, .classify .blog-3 .box-blog .text-blog {
   font-family: var(--font-sub);
@@ -8871,9 +8870,39 @@ a, p, span, strong, del, label {
 .classify .blog-4 .box-blog .text-blog a, .classify .blog-3 .box-blog .text-blog a {
   color: var(--color-white);
   margin-left: 5px;
+  font-size: 14px;
 }
 @media (max-width: 767px) {
   .classify .box-blog img {
-    width: 100%;
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.partner .content-partner {
+  position: relative;
+}
+.partner .content-partner img {
+  height: 320px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.partner .content-partner .text-partner {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 70%;
+  background-color: rgba(36, 37, 40, 0.6);
+  padding: 5px 7px;
+}
+.partner .content-partner .text-partner a {
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+@media (max-width: 991px) {
+  .partner .content-partner .text-partner {
+    width: calc(100% - 30px);
   }
 }/*# sourceMappingURL=main.css.map */
