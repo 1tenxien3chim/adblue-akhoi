@@ -8,6 +8,12 @@
     .row-5{
         margin: 0px -5px;
     }
+    .padd-2-5{
+        padding: 0px 2.5px;
+    }
+    .row-2-5{
+        margin: 0px -2.5px;
+    }
 }
 
 .banner-top{
@@ -167,6 +173,116 @@
             @media(max-width:991px) {
                 width: calc(100% - 30px);
             }
+        }
+    }
+}
+.product-home{
+    .box-product{
+        position: relative;
+        margin-bottom: 5px;
+        img{
+            width: 100%;
+            height: 310px;
+            object-fit: cover;
+        }
+        .name-product{
+            position: absolute;
+            bottom: 0px;
+            padding: 10px;
+            background-color: rgba(36, 37, 40, 0.6);
+            width: 100%;
+            display:flex;
+            color: var(--color-white);
+            font-size: 15px;
+            justify-content: center;
+            align-items: center; 
+            line-height: 18px;
+            a{
+                display: inline-flex;
+                margin-left: 10px;
+                color: var(--color-white);
+            }
+        }
+    }
+    .load-more{
+        text-align: center;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        &::after{
+            position: absolute;
+            left:0px;
+            top:27px;
+            content: "";
+            width: 100%;
+            height: 3px;
+            background: #313132;
+            z-index: -1;
+        }
+        a{
+            position: relative;
+            display: inline-block;
+            padding: 10px;
+            width: 250px;
+            color: var(--color-white);
+            text-transform: uppercase;
+            z-index: 11;
+            background: #3b3d42;;
+        }
+    }
+}
+.box-f{
+    margin-bottom: 30px;
+    p{
+        color:#8F919c;
+        font-size: 13px;
+    }
+}
+.search{
+    max-width: 320px;
+    margin: auto; 
+    margin-bottom: 20px;
+    .searchTerm{
+        color: var(--color-white);
+        background-color: #242629;
+        border:none;
+        width: 200px;
+        height: 36px;
+        padding: 10px 15px;
+        &:focus{
+            outline: none;
+        }
+    }
+    .searchButton{
+        border: none;
+        height: 36px;
+        background-color: #242629; 
+        padding: 5px 15px;
+        color:#8F919c;
+    }
+}
+footer{
+    text-align: center;
+    .social{
+        display: flex; 
+        justify-content: center;
+        margin-bottom: 30px;
+        li{ 
+            display: inline-flex;
+            width: 36px;
+            height: 36px;
+            background-color: var(--color-white); 
+            margin-left: 15px;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            &:first-child{
+                margin-left:0px;
+            }
+            a{
+                color: #1f1f21;
+                font-size: 16px; 
+            } 
         }
     }
 }
