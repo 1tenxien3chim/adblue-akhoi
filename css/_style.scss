@@ -234,7 +234,7 @@
 .box-f{
     margin-bottom: 30px;
     p{
-        color:#8F919c;
+        color:var(--color-text);
         font-size: 13px;
     }
 }
@@ -258,7 +258,7 @@
         height: 36px;
         background-color: #242629; 
         padding: 5px 15px;
-        color:#8F919c;
+        color:var(--color-text);
     }
 }
 footer{

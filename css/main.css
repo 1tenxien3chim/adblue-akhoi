@@ -8711,6 +8711,7 @@ a, p, span, strong, del, label {
 
 :root {
   --color-bg:#1f1f21;
+  --color-text:#8f919c;
   --color-white:#fff;
   --font-primary:"SVN-Gilroy";
   --font-sub:"SVN-Gilroy-medium";
@@ -8972,7 +8973,7 @@ a, p, span, strong, del, label {
   margin-bottom: 30px;
 }
 .box-f p {
-  color: #8F919c;
+  color: var(--color-text);
   font-size: 13px;
 }
 
@@ -8997,7 +8998,7 @@ a, p, span, strong, del, label {
   height: 36px;
   background-color: #242629;
   padding: 5px 15px;
-  color: #8F919c;
+  color: var(--color-text);
 }
 
 footer {
@@ -9024,4 +9025,50 @@ footer .social li:first-child {
 footer .social li a {
   color: #1f1f21;
   font-size: 16px;
+}
+
+.backlink {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.backlink .list-link {
+  display: flex;
+}
+.backlink .list-link li {
+  color: var(--color-white);
+  padding-right: 30px;
+  position: relative;
+}
+.backlink .list-link li::after {
+  position: absolute;
+  content: "\f105";
+  font-family: FontAwesome;
+  right: 10px;
+  top: 0px;
+  color: var(--color-text);
+}
+.backlink .list-link li a {
+  color: var(--color-text);
+}
+.backlink .list-link li:last-child a {
+  color: var(--color-white);
+}
+.backlink .list-link li:last-child::after {
+  display: none;
+}
+
+.blogs {
+  margin-bottom: 50px;
+}
+
+.blogs-detail .content-detail {
+  font-size: 14px;
+  color: var(--color-white);
+}
+.blogs-detail .content-detail p {
+  line-height: 30px;
+}
+.blogs-detail .content-detail img {
+  max-width: 100%;
+  margin: auto;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,48 @@
+.backlink{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    .list-link{
+        display: flex;
+        li{ 
+            color: var(--color-white);
+            padding-right:30px;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "\f105";
+                font-family: FontAwesome;
+                right: 10px;
+                top: 0px;
+                color: var(--color-text);
+            }
+            a{
+                color: var(--color-text);
+            }
+            &:last-child{
+                a{
+                    color: var(--color-white);
+                }
+                &::after{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.blogs{
+    margin-bottom: 50px;
+}
+.blogs-detail{
+    .content-detail{
+        font-size: 14px;
+        color: var(--color-white);
+        p{
+            line-height: 30px;
+        } 
+        img{
+            max-width: 100%;
+            margin: auto;
+        }
+
+    }
+}
