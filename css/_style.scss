@@ -17,9 +17,26 @@
 }
 
 .banner-top{
-    padding-top: 50px;  
+    padding-top: 50px;   
     .box-banner-top{
         position: relative; 
+        .logo-top{
+            position: absolute;
+            bottom: 170px;
+            left: 0px;
+            img{
+                max-width: 150px;
+            }
+            @media (max-width:767px){  
+                bottom: unset;
+                top: 51px;
+                left: 0px;
+                right: 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
         img.banner-img{
             width: 100%;
             min-height: 418px;
@@ -263,6 +280,9 @@
 }
 footer{
     text-align: center;
+    .logo{
+        margin: 30px 0px;
+    }
     .social{
         display: flex; 
         justify-content: center;

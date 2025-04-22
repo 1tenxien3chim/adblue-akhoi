@@ -8761,6 +8761,25 @@ a, p, span, strong, del, label {
 .banner-top .box-banner-top {
   position: relative;
 }
+.banner-top .box-banner-top .logo-top {
+  position: absolute;
+  bottom: 170px;
+  left: 0px;
+}
+.banner-top .box-banner-top .logo-top img {
+  max-width: 150px;
+}
+@media (max-width: 767px) {
+  .banner-top .box-banner-top .logo-top {
+    bottom: unset;
+    top: 51px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .banner-top .box-banner-top img.banner-img {
   width: 100%;
   min-height: 418px;
@@ -9003,6 +9022,9 @@ a, p, span, strong, del, label {
 
 footer {
   text-align: center;
+}
+footer .logo {
+  margin: 30px 0px;
 }
 footer .social {
   display: flex;
