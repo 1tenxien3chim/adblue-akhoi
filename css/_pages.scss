@@ -46,3 +46,45 @@
 
     }
 }
+// detail
+
+.main {
+    .content-detail  {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .card { 
+      border-radius: 2px; 
+  
+      &-image {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding-top: 70%; 
+  
+        img {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .main {
+      .content-detail {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+      }
+    }
+  }
