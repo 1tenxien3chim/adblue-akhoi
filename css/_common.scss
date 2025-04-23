@@ -9,8 +9,9 @@
 }
 html {
     font-size: calc(10em / 16);
-    /* for IE adjust. it's equal 62.5%*/
+    scroll-behavior: smooth;
     font-family: var(--font-sub);
+    position: relative;
 }
 p {
     margin: 0px;

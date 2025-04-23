@@ -306,3 +306,33 @@ footer{
         }
     }
 }
+.top-frame {
+    width: 6rem;
+    outline: 2px dashed greenyellow;
+    position: absolute;
+    right:30px;
+    bottom: 0rem; 
+    height: calc(100% - 100vh); 
+    -webkit-mask-image: linear-gradient(transparent 0%, black 200px);
+    mask-image: linear-gradient(transparent 0%, black 200px);
+  }
+  .top-inner { 
+    position: fixed;
+    bottom: 40px; 
+    width: 6rem;
+  }
+  .top {
+    background: var(--color-text); 
+    width:45px;
+    height: 45px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; 
+    color: var(--color-white);
+    text-decoration: none;
+    &:hover{
+        background: var(--color-text); 
+        color: var(--color-white);
+    }
+  }
