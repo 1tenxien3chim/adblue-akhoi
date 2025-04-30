@@ -8899,6 +8899,9 @@ a, p, span, strong, del, label {
   margin-left: 5px;
   font-size: 14px;
 }
+.classify .blog-4 .box-blog:hover, .classify .blog-3 .box-blog:hover {
+  width: 120%;
+}
 @media (max-width: 767px) {
   .classify .box-blog img {
     max-width: 100%;
@@ -8967,6 +8970,7 @@ a, p, span, strong, del, label {
   position: relative;
   margin-top: 20px;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .product-home .load-more::after {
   position: absolute;
